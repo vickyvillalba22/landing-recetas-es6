@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mis recetas</title>
+
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/basic-styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Domine:wght@400..700&display=swap" rel="stylesheet">
+
 </head>
-<body>
+
+<body class="df columna centerY">
     
-    <header>
+    <header class="w90 df bordeRojo spaceb">
 
-        <img src="assets/imgs/logo.png" alt="logo mis recetas">
-        <p>Mis recetas</p>
+        <div class="df centerY w20 logo">
+            <img src="assets/imgs/logo.png" alt="logo mis recetas">
+            <p class="logo-title">Mis recetas</p>
+        </div>
 
-        <nav>
-            <ul class="sinItem">
+        <nav class="w20 df">
+            <ul class="sinItem w100 df spaceb h100 centerY">
                 <li>Categorías</li>
                 <li>Recetas</li>
                 <li>Contacto</li>
@@ -24,15 +35,16 @@
 
     </header>
 
-    <main>
+    <main class="w90 bordeRojo">
 
         <section id="heroSection">
 
             <div>
                 <h1>Comer sano es una parte muy importante de tu estilo de vida</h1>
                 <h4>Recetas listas para preparar las comidas más ricas!</h4>
-                <button>
+                <button class="button-style button-rojo">
                     Ver todas las recetas
+                    <iconify-icon icon="hugeicons:arrow-down-02" class="basic-icon"></iconify-icon>
                 </button>
             </div>
 
@@ -91,6 +103,8 @@
         </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.2/dist/iconify-icon.min.js"></script>   
 
 </body>
 </html>

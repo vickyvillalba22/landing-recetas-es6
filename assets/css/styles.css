@@ -1,8 +1,42 @@
-section{
-    width: 90%;
+body{
+    background-color: var(--fondo-claro);
+}
+h1{
+    font-family: var(--font-principal);
+}
+p, h2, h3, h4, span, button, a{
+    font-family: var(--font-secundaria);
 }
 
 /*HEADER*/
+.logo{
+    gap: 16px;
+}
 header img{
-    width: 8%;
+    width: 15%;
+}
+.logo-title{
+    font-family: var(--font-principal);
+    font-weight: 700;
+}
+
+/*BUTTON*/
+.button-style{
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 8px 24px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.button-rojo{
+    background-color: var(--color-acento);
+    color: var(--blanco);
+}
+
+/*ICONS*/
+.basic-icon{
+    font-size: 1.5em;
 }

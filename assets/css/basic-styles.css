@@ -10,23 +10,23 @@
     border: 3px solid red;
 }
 
+:root{
+    --fondo-claro: #FFEFE0;
+    --color-acento: #E94228;
+    --color-medio1: #FEAA4E;
+    --color-acento2: #D2D835;
+    --color-oscuro: #225629;
+    --blanco: #FDFFFE;
+    --font-principal: "Domine", serif;
+    --font-secundaria: "Albert Sans", sans-serif;
+}
+
 /*sacar cosas*/
 .sinItem{
     list-style: none;
 }
 .sinBorde{
     border: none;
-}
-
-/*fondos*/
-.fondoBlanco{
-    background-color: white;
-}
-.fondoNegro{
-    background-color: black;
-}
-.fondoTransparente{
-    background-color: #ffffff00;
 }
 
 /*colores*/
