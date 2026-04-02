@@ -13,7 +13,7 @@
 :root{
     --fondo-claro: #FFEFE0;
     --color-acento: #E94228;
-    --color-medio1: #FEAA4E;
+    --color-medio: #FEAA4E;
     --color-acento2: #D2D835;
     --color-oscuro: #225629;
     --blanco: #FDFFFE;
@@ -81,6 +81,9 @@
 .posRel{
     position: relative;
 }
+.gap-16{
+    gap: 16px;
+}
 
 /*alturas*/
 .h100{
@@ -97,7 +100,7 @@
     min-height: 100vh;
 }
 .vh90{
-    min-height: 90vh;
+    height: 90vh;
 }
 .vh60{
     height: 60vh;

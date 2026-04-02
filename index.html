@@ -18,9 +18,9 @@
 
 <body class="df columna centerY">
     
-    <header class="w90 df bordeRojo spaceb">
+    <header class="w90 df spaceb vh10">
 
-        <div class="df centerY w20 logo">
+        <div class="df centerY w20 gap-16">
             <img src="assets/imgs/logo.png" alt="logo mis recetas">
             <p class="logo-title">Mis recetas</p>
         </div>
@@ -35,37 +35,46 @@
 
     </header>
 
-    <main class="w90 bordeRojo">
+    <main class="w90 df columna">
 
-        <section id="heroSection">
+        <section id="heroSection" class="df spacee centerY vh90">
 
-            <div>
-                <h1>Comer sano es una parte muy importante de tu estilo de vida</h1>
-                <h4>Recetas listas para preparar las comidas más ricas!</h4>
+            <div class="w40 df columna gap-16">
+                <h1>Comer sano es una parte muy importante de tu <span class="highlight-h1">estilo de vida</span></h1>
+                <h4 class="desc-hero">Recetas listas para preparar las comidas más ricas!</h4>
                 <button class="button-style button-rojo">
                     Ver todas las recetas
                     <iconify-icon icon="hugeicons:arrow-down-02" class="basic-icon"></iconify-icon>
                 </button>
             </div>
 
-            <div class="heroImage w50">
+            <div class="heroImage w40 posRel">
 
                 <img src="assets/imgs/hero-image.png" alt="" class="w100">
-                <div>
-                    <p>Súper fácil</p>
+                <div class="posAb star df centerX centerY">
+                    <p class="w80 textCenter">Súper fácil</p>
                 </div>
-                <div>
-                    <p>Se adaptan a tus preferencias!</p>
+                <div class="posAb rectangle">
+                    <p class="w70">Se adaptan a tus preferencias!</p>
                 </div>
 
             </div>
 
         </section>
 
-        <section id="categorias">
+        <section id="categorias"> 
 
-            <h2>Categorías</h2>
-            <div id="contCategorias"></div>
+            <h2 class="subtitle">Categorías</h2>
+
+            <div id="contCategorias" class="df">
+
+                <!--<div class="card-category">
+                    <img src="" alt="">
+                    <h3></h3>
+                </div>-->
+
+            </div>
+
             <div class="arrowsCont"></div>
 
         </section>
@@ -103,6 +112,8 @@
         </div>
 
     </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.2/dist/iconify-icon.min.js"></script>   
 

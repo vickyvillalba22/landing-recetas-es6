@@ -8,10 +8,11 @@ p, h2, h3, h4, span, button, a{
     font-family: var(--font-secundaria);
 }
 
-/*HEADER*/
-.logo{
-    gap: 16px;
+main{
+    gap: 4em;
 }
+
+/*HEADER*/
 header img{
     width: 15%;
 }
@@ -20,16 +21,17 @@ header img{
     font-weight: 700;
 }
 
-/*BUTTON*/
+/*BUTTONS*/
 .button-style{
     border: none;
-    font-size: 1em;
-    font-weight: 600;
+    font-size: 1.1em;
+    font-weight: 500;
     padding: 8px 24px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     gap: 8px;
+    width: fit-content;
 }
 .button-rojo{
     background-color: var(--color-acento);
@@ -39,4 +41,58 @@ header img{
 /*ICONS*/
 .basic-icon{
     font-size: 1.5em;
+}
+
+/*HERO SECTION*/
+h1{
+    font-size: 2.5em;
+}
+.highlight-h1{
+    font-family: var(--font-principal);
+    color: var(--color-oscuro);
+}
+.desc-hero{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.heroImage img{
+    transform: translateX(70px);
+}
+.heroImage .posAb{
+    font-size: 1.2em;
+}
+.star{
+    background-color: var(--color-acento2);
+    top: 10%;
+    right: 0;
+    clip-path: polygon(51% 1%, 35% 15%, 14% 16%, 17% 37%, 0% 49%, 20% 63%, 16% 82%, 39% 81%, 52% 100%, 64% 81%, 89% 80%, 84% 60%, 100% 45%, 83% 33%, 86% 13%, 65% 13%);
+    aspect-ratio: 1;
+    padding: 20px;
+}
+.star p{
+    font-weight: 700;
+}
+.rectangle{
+    border: 2px solid var(--color-medio);
+    border-radius: 24px;
+    padding: 20px 30px;
+    left: 0;
+    top: 80%;
+    z-index: -1;
+}
+
+/*CATEGORIAS*/
+.subtitle{
+    font-size: 2em;
+}
+#contCategorias{
+    height: 60vh;
+    gap: 50px;
+    overflow-x: auto;
+}
+.card-category{
+    height: 20vh;
+}
+.card-category img{
+    height: 100%;
 }
