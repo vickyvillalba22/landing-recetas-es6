@@ -21,6 +21,37 @@
     --font-secundaria: "Albert Sans", sans-serif;
 }
 
+.italia{
+    background-color: #225629;
+}
+.asia{
+    background-color: #ffc53c;
+}
+.america{
+    background-color: #E94228;
+}
+.mexico{
+    background-color: #225629;
+}
+.mediterraneo{
+    background-color: #00c1b7;
+}
+.pakistani{
+    background-color: #225629;
+}
+.japon{
+    background-color: #E94228;
+}
+.marruecos{
+    background-color: #831100;
+}
+.korea{
+    background-color: #915700;
+}
+.grecia{
+    background-color: rgb(0, 208, 255);
+}
+
 /*sacar cosas*/
 .sinItem{
     list-style: none;

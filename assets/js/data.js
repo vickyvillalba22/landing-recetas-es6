@@ -27,10 +27,18 @@ export const makeArrayCategories = (recipes)=>{
 
     const arrayCategories = []
 
-    recipes.forEach(recipe => {
-        if(!arrayCategories.includes(recipe.cuisine)){
-            arrayCategories.push(recipe.cuisine)
+    recipes.forEach((recipe, index) => {
+
+        const yaEsta = arrayCategories.some(cat=>cat.name===recipe.cuisine)
+
+        if(!yaEsta){
+            arrayCategories.push({
+              name: recipe.cuisine,
+              image: recipe.image,
+              color: ""
+            })
         }
+        
     });
 
     console.log(arrayCategories);
