@@ -1,22 +1,22 @@
-import { categories } from "./data.js";
+//INICIALIZACIÓN
 
-const contCategorias = document.getElementById("contCategorias")
+import { urlRecipes, fetchData, makeArrayCategories } from "./data.js";
 
-const renderCategories = array => {
-    
-    for(let category of array){
+import { renderCategories } from "./renders.js";
 
-        let categoryCard = document.createElement("div")
-        categoryCard.classList.add("card-category")
+const init = async () => {
+    try {
+
+        const data = await fetchData (urlRecipes)
+        const recipes = data.recipes
+        console.log(recipes);
         
-        categoryCard.innerHTML = `
-            <img src="${category.image}" alt="${category.name}">
-            <h3>${category.name}</h3>
+        const categories = makeArrayCategories(recipes)
+        renderCategories(categories)
 
-        `
-        console.log(categoryCard)
-        contCategorias.appendChild(categoryCard)
+    } catch (error) {
+        
     }
-} 
+}
 
-renderCategories(categories)
+init()
