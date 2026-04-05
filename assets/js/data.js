@@ -23,7 +23,27 @@ export const fetchData = async (url) => {
   }
 }
 
-export const makeArrayCategories = (recipes)=>{
+export const getDetails = async (id) => {
+
+  try {
+
+    const data = await fetchData (urlRecipes)
+    const recipes = data.recipes
+    
+    const recipe = recipes.find(receta => receta.id == id)
+    console.log(recipe);
+    
+    return recipe
+
+  } catch (error) {
+    
+    console.error ("error obteniendo detalles de la receta", error)
+
+  }
+  
+}
+
+export const makeArrayCategories = (recipes) => {
 
     const arrayCategories = []
 
@@ -43,4 +63,3 @@ export const makeArrayCategories = (recipes)=>{
 
     return arrayCategories
 } 
-

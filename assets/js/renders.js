@@ -56,7 +56,7 @@ export const renderRecetas = array => {
             <p>${receta.cuisine}</p>
             <h3>${receta.name}</h3>
             <ul class="df wrap">${contLabels.join("")}</ul>
-            <a href="" class="button-style button-verde">
+            <a href="detail.html?id=${receta.id}" class="button-style button-verde">
                 Detalles 
                 <iconify-icon icon="hugeicons:arrow-right-02" class="basic-icon"></iconify-icon>
             </a>

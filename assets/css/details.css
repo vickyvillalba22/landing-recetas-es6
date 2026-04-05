@@ -1,0 +1,41 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 16px;
+}
+
+section{
+    border-radius: 16px;
+    padding: 24px;
+}
+
+/*INFO*/
+#info { 
+    grid-area: 1 / 1 / 6 / 2; 
+    background-color: var(--blanco);
+}
+#info img{
+    height: 60%;
+}
+#info h2{
+    font-family: var(--font-principal);
+    font-size: 1.9em;
+    font-weight: 300;
+}
+
+
+#tecnico { 
+    grid-area: 1 / 2 / 3 / 3; 
+    border: 2px solid var(--color-acento2);
+}
+
+#ingredientes { 
+    grid-area: 3 / 2 / 6 / 3; 
+    border: 2px solid var(--color-medio);
+}
+
+#pasos { 
+    grid-area: 1 / 3 / 6 / 4; 
+    border: 2px solid var(--color-acento);
+}

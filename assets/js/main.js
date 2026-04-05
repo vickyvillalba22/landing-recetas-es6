@@ -1,10 +1,11 @@
 //INICIALIZACIÓN
 
-import { urlRecipes, fetchData, makeArrayCategories } from "./data.js";
+import { urlRecipes, fetchData, getDetails, makeArrayCategories } from "./data.js";
 
 import { renderCategories, renderRecetas, renderCierre, renderFooter } from "./renders.js";
 
 const init = async () => {
+
     try {
 
         const data = await fetchData (urlRecipes)
@@ -18,6 +19,8 @@ const init = async () => {
         renderCierre(recipes)
 
         renderFooter()
+
+        getDetails(1)
 
     } catch (error) {
         
