@@ -11,6 +11,9 @@ p, h2, h3, h4, span, button, a{
 main{
     gap: 4em;
 }
+section{
+    gap: 2em;
+}
 
 /*HEADER*/
 header img{
@@ -81,7 +84,7 @@ h1{
     z-index: -1;
 }
 
-/*CATEGORIAS*/
+/*CATEGORIAS - LIMPIAR*/
 .subtitle{
     font-size: 2em;
 }
@@ -106,4 +109,50 @@ h1{
     border-radius: 100%;
     aspect-ratio: 1;
     transform: translateY(30px);
+}
+
+/*RECETAS*/
+
+#contRecetas{
+    gap: 3em;
+}
+
+.card-receta{
+    background-color: var(--blanco);
+    border-radius: 16px;
+    padding: 20px;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.250));
+}
+.card-receta img{
+    border-radius: 16px;
+}
+.card-receta h3{
+    font-size: 1.5em;
+}
+.card-receta ul{
+    gap: 4px;
+}
+.card-receta span{
+    font-size: .8em;
+    background-color: var(--color-medio);
+    color: var(--blanco);
+    width: fit-content;
+    padding: 1px 12px;
+    border-radius: 20px;
+}
+
+.card-receta .button-style{
+    padding: 4px 16px;
+    font-size: .8em;
+    align-self: end;
+}
+
+.button-verde{
+    background-color: var(--color-acento2);
+    color: var(--color-oscuro);
+}
+
+#recetas button{
+    font-size: 1em;
+    align-self: center;
 }

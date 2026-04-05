@@ -41,7 +41,6 @@ export const makeArrayCategories = (recipes)=>{
         
     });
 
-    console.log(arrayCategories);
     return arrayCategories
 } 
 

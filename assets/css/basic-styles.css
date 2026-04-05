@@ -1,3 +1,5 @@
+/*Archivo de estilos generales*/
+
 *{
     margin: 0;
     padding: 0;
@@ -99,6 +101,9 @@
 }
 .spacee{
     justify-content: space-evenly;
+}
+.wrap{
+    flex-wrap: wrap;
 }
 .objCover{
     object-fit: cover;
