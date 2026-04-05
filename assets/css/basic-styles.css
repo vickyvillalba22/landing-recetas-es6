@@ -62,14 +62,6 @@
     border: none;
 }
 
-/*colores*/
-.blanco{
-    color: white;
-}
-.negro{
-    color: black;
-}
-
 /*bordes*/
 .bordeRedondo{
     border-radius: 25px;

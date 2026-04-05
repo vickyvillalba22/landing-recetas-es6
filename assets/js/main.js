@@ -2,7 +2,7 @@
 
 import { urlRecipes, fetchData, makeArrayCategories } from "./data.js";
 
-import { renderCategories, renderRecetas } from "./renders.js";
+import { renderCategories, renderRecetas, renderCierre, renderFooter } from "./renders.js";
 
 const init = async () => {
     try {
@@ -14,6 +14,10 @@ const init = async () => {
         renderCategories(categories)
         
         renderRecetas(recipes)
+
+        renderCierre(recipes)
+
+        renderFooter()
 
     } catch (error) {
         

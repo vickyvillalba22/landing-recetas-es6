@@ -1,5 +1,6 @@
 //RENDERIZACIÓN
 
+//CATEGORÍAS
 const contCategorias = document.getElementById("contCategorias")
 
 const colorCategories = [
@@ -32,6 +33,7 @@ export const renderCategories = array => {
     }
 } 
 
+//RECETAS
 const contRecetas = document.getElementById("contRecetas")
 
 export const renderRecetas = array => {
@@ -62,5 +64,57 @@ export const renderRecetas = array => {
         `
         contRecetas.appendChild(cardReceta)
     });
+
+}
+
+//IMÁGENES CIERRE
+const gridImages = document.getElementById("gridImages")
+
+export const renderCierre = array => {
+
+    for(let i=0; i<3; i++){
+
+        let imagen = document.createElement("img")
+        imagen.classList.add("w100", "h100", "objCover")
+        
+        if (i===1){
+            imagen.classList.add("larga")
+        }
+
+        imagen.setAttribute("src", `${array[i].image}`)
+        gridImages.appendChild(imagen)
+
+    }
+
+}
+
+//ICONOS FOOTER
+const contIcons = document.getElementById("contIcons")
+
+const iconsFooter = [
+    {
+        icon: "hugeicons:internet",
+        link: "https://portfolio-villalba.vercel.app/"
+    },
+    {
+        icon: "hugeicons:internet",
+        link: "https://portfolio-villalba.vercel.app/"
+    },
+    {
+        icon: "hugeicons:internet",
+        link: "https://portfolio-villalba.vercel.app/"
+    },
+]
+
+export const renderFooter = array => {
+
+    iconsFooter.forEach((icon, index)=>{
+        let icono = document.createElement("a")
+        icono.setAttribute("href", `${iconsFooter[index].link}`)
+        icono.innerHTML = `
+             <iconify-icon icon="${iconsFooter[index].icon}" class="basic-icon"></iconify-icon>
+        `
+        contIcons.appendChild(icono)
+    })
 
 }
