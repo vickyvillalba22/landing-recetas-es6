@@ -14,13 +14,18 @@ const renderInfo = obj => {
 
     info.innerHTML = `
     
-        <img src="${obj.image}" alt="" class="w100 objCover">
-        <div class="df spaceb">
-            <p>${obj.cuisine}</p>
-            <ul class="df wrap w80">${contLabels.join("")}</ul>
+        <div class="df columna gap-16 imagen">
+            <img src="${obj.image}" alt="" class="w100 objCover">
+            <div class="df spaceb">
+                <p>${obj.cuisine}</p>
+                <ul class="df wrap w80">${contLabels.join("")}</ul>
+            </div>
         </div>
-        <h2>${obj.name}</h2>
-        <span>${contTypes.join("")}</span>
+
+        <div class="df columna gap-16">
+            <h2>${obj.name}</h2>
+            <ul>${contTypes.join("")}</ul>
+        </div>
 
         <div class="df spacee">
             <div class="df gap-16">
