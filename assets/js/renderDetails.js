@@ -17,7 +17,7 @@ export const renderInfo = obj => {
         <img src="${obj.image}" alt="" class="w100 objCover">
         <div class="df spaceb">
             <p>${obj.cuisine}</p>
-            <ul>${contLabels.join("")}</ul>
+            <ul class="df wrap w80">${contLabels.join("")}</ul>
         </div>
         <h2>${obj.name}</h2>
         <span>${contTypes.join("")}</span>
@@ -37,6 +37,40 @@ export const renderInfo = obj => {
 
 }
 
+export const renderTecnico = obj => {
+    const tecnico = document.getElementById("tecnico")
+    tecnico.innerHTML = `
+
+        <ul class="sinItem">
+
+            <li class="df columna centerX centerY gap-16"><iconify-icon icon="hugeicons:clock-01" class="basic-icon"></iconify-icon>Prep time: ${obj.prepTimeMinutes} mins</li>
+
+            <li class="df columna centerX centerY gap-16"><iconify-icon icon="hugeicons:timer-02" class="basic-icon"></iconify-icon>Cook time: ${obj.cookTimeMinutes} mins</li>
+
+            <li class="df columna centerX centerY gap-16"><iconify-icon icon="hugeicons:user-group-02" class="basic-icon"></iconify-icon>Servings: ${obj.servings}</li>
+
+            <li class="df columna centerX centerY gap-16"><iconify-icon icon="hugeicons:pyramid-structure-01" class="basic-icon"></iconify-icon>Difficulty: ${obj.difficulty}</li>
+
+        </ul>
+    `
+}
+
+export const renderIngredientes = obj => {
+    const ingredientes = document.getElementById("ingredientes")
+
+    let list = []
+    obj.ingredients.forEach(ing =>{
+        list.push(`<li>${ing}</li>`)
+    })
+
+    ingredientes.innerHTML = `
+        <h4>Ingredientes</h4>
+        <ul class="sinItem">${list.join("")}</ul>
+    `
+}
+
 export const rendering = recipe => {
     renderInfo(recipe)
+    renderTecnico(recipe)
+    renderIngredientes(recipe)
 }

@@ -16,20 +16,46 @@ section{
     background-color: var(--blanco);
 }
 #info img{
-    height: 60%;
+    height: 50%;
+    border-radius: 8px;
 }
 #info h2{
     font-family: var(--font-principal);
     font-size: 1.9em;
     font-weight: 300;
 }
+#info ul{
+    gap: 8px;
+    justify-content: right;
+}
+#info span{
+    font-size: .8em;
+    background-color: var(--color-medio);
+    color: var(--blanco);
+    width: fit-content;
+    padding: 1px 12px;
+    border-radius: 20px;
+}
 
-
+/*TECNICO*/
 #tecnico { 
     grid-area: 1 / 2 / 3 / 3; 
     border: 2px solid var(--color-acento2);
 }
 
+#tecnico ul{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#tecnico .basic-icon{
+    color: var(--color-oscuro);
+}
+
+/*INGREDIENTES*/
 #ingredientes { 
     grid-area: 3 / 2 / 6 / 3; 
     border: 2px solid var(--color-medio);
