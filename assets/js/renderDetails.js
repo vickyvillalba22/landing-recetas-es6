@@ -1,4 +1,4 @@
-export const renderInfo = obj => {
+const renderInfo = obj => {
 
     const info = document.getElementById("info")
 
@@ -37,7 +37,7 @@ export const renderInfo = obj => {
 
 }
 
-export const renderTecnico = obj => {
+const renderTecnico = obj => {
     const tecnico = document.getElementById("tecnico")
     tecnico.innerHTML = `
 
@@ -55,7 +55,7 @@ export const renderTecnico = obj => {
     `
 }
 
-export const renderIngredientes = obj => {
+const renderIngredientes = obj => {
     const ingredientes = document.getElementById("ingredientes")
 
     let list = []
@@ -64,8 +64,26 @@ export const renderIngredientes = obj => {
     })
 
     ingredientes.innerHTML = `
-        <h4>Ingredientes</h4>
-        <ul class="sinItem">${list.join("")}</ul>
+        <h4>Ingredients</h4>
+        <ul class="sinItem df columna gap-16">${list.join("")}</ul>
+    `
+}
+
+const renderInstrucciones = obj => {
+    const instrucciones = document.getElementById("pasos")
+
+    let steps = []
+    let i = 1
+    obj.instructions.forEach(step =>{
+        steps.push(`<li><strong>${i}) </strong>${step}</li>`)
+        i++
+    })
+
+    instrucciones.innerHTML = `
+
+        <h4>Instructions</h4>
+        <ul class="sinItem df columna gap-16">${steps.join("")}</ul>
+
     `
 }
 
@@ -73,4 +91,5 @@ export const rendering = recipe => {
     renderInfo(recipe)
     renderTecnico(recipe)
     renderIngredientes(recipe)
+    renderInstrucciones(recipe)
 }
