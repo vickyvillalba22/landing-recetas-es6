@@ -97,12 +97,12 @@ const iconsFooter = [
         link: "https://portfolio-villalba.vercel.app/"
     },
     {
-        icon: "hugeicons:internet",
-        link: "https://portfolio-villalba.vercel.app/"
+        icon: "hugeicons:github",
+        link: "https://github.com/vickyvillalba22"
     },
     {
-        icon: "hugeicons:internet",
-        link: "https://portfolio-villalba.vercel.app/"
+        icon: "hugeicons:linkedin-01",
+        link: "https://www.linkedin.com/in/vvillalba/"
     },
 ]
 
