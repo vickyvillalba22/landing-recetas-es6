@@ -19,6 +19,9 @@ section{
 header img{
     width: 15%;
 }
+a{
+    color: var(--negro);
+}
 .logo-title{
     font-family: var(--font-principal);
     font-weight: 700;
