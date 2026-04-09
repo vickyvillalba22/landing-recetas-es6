@@ -210,3 +210,14 @@ footer a{
 .derecha{
     align-items: end;
 }
+
+/*MOBILE*/
+
+@media (max-width: 550px){
+    #heroSection{
+        flex-direction: column-reverse;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
