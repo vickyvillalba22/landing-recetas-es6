@@ -31,7 +31,6 @@ export const getDetails = async (id) => {
     const recipes = data.recipes
     
     const recipe = recipes.find(receta => receta.id == id)
-    console.log(recipe);
     
     return recipe
 

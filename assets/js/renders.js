@@ -49,8 +49,6 @@ const contRecetas = document.getElementById("contRecetas")
 
 export const renderRecetas = (array, filter = null) => {
 
-    console.log(array);
-
     let arrayRender = []
 
     if(filter){
