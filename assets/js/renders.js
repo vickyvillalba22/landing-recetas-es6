@@ -16,7 +16,13 @@ const colorCategories = [
     "grecia"
 ];
 
-export const renderCategories = array => {
+export const renderCategories = (array, fullArray) => {
+
+    const allRecipes = document.getElementById("allRecipes")
+    allRecipes.addEventListener('click', ()=>{
+        contRecetas.innerHTML = ""
+        renderRecetas(fullArray)
+    })
     
     for(let i=0; i<array.length; i++){
 
@@ -29,6 +35,11 @@ export const renderCategories = array => {
 
         `
 
+        categoryCard.addEventListener('click', ()=>{
+            contRecetas.innerHTML = ""
+            renderRecetas(fullArray, array[i].name)
+        })
+
         contCategorias.appendChild(categoryCard)
     }
 } 
@@ -36,11 +47,19 @@ export const renderCategories = array => {
 //RECETAS
 const contRecetas = document.getElementById("contRecetas")
 
-export const renderRecetas = array => {
+export const renderRecetas = (array, filter = null) => {
 
     console.log(array);
 
-    array.forEach(receta => {
+    let arrayRender = []
+
+    if(filter){
+        arrayRender = array.filter(recipe => recipe.cuisine === filter)
+    } else {
+        arrayRender = array
+    }
+
+    arrayRender.forEach(receta => {
 
         let cardReceta = document.createElement("div")
         cardReceta.classList.add("card-receta", "vh60", "w20", "df", "columna", "spaceb")

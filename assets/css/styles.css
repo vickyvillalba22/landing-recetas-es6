@@ -106,7 +106,7 @@ h1{
 }
 .card-category h3{
     padding: 50px 40px;
-    border-radius: 24px;
+    border-radius: 16px;
 }
 .card-category img{
     height: 20vh;
@@ -114,6 +114,10 @@ h1{
     border-radius: 100%;
     aspect-ratio: 1;
     transform: translateY(30px);
+}
+
+.card-category:hover{
+    transform: translateY(-20px);
 }
 
 /*RECETAS*/
@@ -150,6 +154,10 @@ h1{
     padding: 4px 16px;
     font-size: .8em;
     align-self: end;
+}
+
+.card-receta:hover{
+    transform:scale(1.1);
 }
 
 .button-verde{

@@ -12,7 +12,7 @@ const init = async () => {
         const recipes = data.recipes
         
         const categories = makeArrayCategories(recipes)
-        renderCategories(categories)
+        renderCategories(categories, recipes)
         
         renderRecetas(recipes)
 
@@ -33,11 +33,8 @@ init()
 
 //HEADER
 const header = document.querySelector("header")
-console.log(header);
 
-window.addEventListener('scroll', ()=>{
-    console.log(header);
-    
+window.addEventListener('scroll', ()=>{    
     const scrollY = window.scrollY
     if(scrollY>100){
         header.classList.add("header-fixed")
