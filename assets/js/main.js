@@ -30,3 +30,18 @@ const init = async () => {
 }
 
 init()
+
+//HEADER
+const header = document.querySelector("header")
+console.log(header);
+
+window.addEventListener('scroll', ()=>{
+    console.log(header);
+    
+    const scrollY = window.scrollY
+    if(scrollY>100){
+        header.classList.add("header-fixed")
+    } else {
+        header.classList.remove("header-fixed")
+    }
+})

@@ -20,20 +20,22 @@
 
 <body class="df columna centerY">
     
-    <header class="w90 df spaceb vh10">
+    <header class="w100 df centerX vh10">
 
-        <div class="df centerY w20 gap-16">
-            <img src="assets/imgs/logo.png" alt="logo mis recetas">
-            <p class="logo-title">Mis recetas</p>
+        <div class="df spaceb w90">
+            <div class="df centerY w20 gap-16">
+                <img src="assets/imgs/logo.png" alt="logo mis recetas">
+                <p class="logo-title">Mis recetas</p>
+            </div>
+
+            <nav class="w20 df">
+                <ul class="sinItem w100 df spaceb h100 centerY">
+                    <a href="#categorias">Categorías</a>
+                    <a href="#recetas">Recetas</a>
+                    <a href="#footer">Contacto</a>
+                </ul>
+            </nav>
         </div>
-
-        <nav class="w20 df">
-            <ul class="sinItem w100 df spaceb h100 centerY">
-                <a href="#categorias">Categorías</a>
-                <a href="#recetas">Recetas</a>
-                <a href="#footer">Contacto</a>
-            </ul>
-        </nav>
 
     </header>
 
@@ -44,10 +46,10 @@
             <div class="w40 df columna gap-16">
                 <h1>Comer sano es una parte muy importante de tu <span class="highlight-h1">estilo de vida</span></h1>
                 <h4 class="desc-hero">Recetas listas para preparar las comidas más ricas!</h4>
-                <button class="button-style button-rojo">
+                <a href="#recetas" class="button-style button-rojo">
                     Ver todas las recetas
                     <iconify-icon icon="hugeicons:arrow-down-02" class="basic-icon"></iconify-icon>
-                </button>
+                </a>
             </div>
 
             <div class="heroImage w40 posRel">
@@ -64,13 +66,11 @@
 
         </section>
 
-        <section id="categorias" class="df columna"> 
+        <section id="categorias" class="df columna spacee"> 
 
             <h2 class="subtitle">Categorías</h2>
 
-            <div id="contCategorias" class="df"></div>
-
-            <div class="arrowsCont"></div>
+            <div id="contCategorias" class="df centerY"></div>
 
         </section>
 
